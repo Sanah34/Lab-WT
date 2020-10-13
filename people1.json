@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "countryName": "Singapore",
+        "discount": "15%"
+    },
+    {
+        "id": "2",
+        "countryName": "Malaysia",
+        "discount": "10%"
+    },
+    {
+        "id": "3",
+        "countryName": "New Zealand",
+        "discount": "15%"
+    },
+{
+        "id": "4",
+        "countryName": "Pakistan",
+        "discount": "10%"
+    },
+{
+        "id": "5",
+        "countryName": "Philippines",
+        "discount": "15%"
+    },
+{
+        "id": "6",
+        "countryName": "Canada",
+        "discount": "10%"
+    },
+{
+        "id": "7",
+        "countryName": "Greece",
+        "discount": "20%"
+    },
+{
+        "id": "8",
+        "countryName": "Switzerland",
+        "discount": "25%"
+    },
+{
+        "id": "9",
+        "countryName": "Algeria",
+        "discount": "10%"
+    },
+{
+        "id": "10",
+        "countryName": "Brazil",
+        "discount": "15%"
+    },
+{
+        "id": "11",
+        "countryName": "Mexico",
+        "discount": "25%"
+    },
+{
+        "id": "12",
+        "countryName": "Bahrain",
+        "discount": "35%"
+      },
+{
+        "id": "13",
+        "countryName": "Morocco",
+        "discount": "25%"
+  },
+{
+        "id": "14",
+        "countryName": "Monaco",
+        "discount": "15%"
+ },
+{
+        "id": "15",
+        "countryName": "Micronesia",
+        "discount": "10%"
+},
+{
+        "id": "16",
+        "countryName": "Mali",
+        "discount": "15%"
+},
+{
+        "id": "17",
+        "countryName": "Malta",
+        "discount": "10%"
+},
+{
+        "id": "18",
+        "countryName": "Albania",
+        "discount": "15%"
+},
+{
+        "id": "19",
+        "countryName": "Austria",
+        "discount": "25%"
+},
+{
+        "id": "20",
+        "countryName": "Bavaria",
+        "discount": "35%"
+}
+]

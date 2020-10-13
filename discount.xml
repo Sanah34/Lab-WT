@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="travels.xsl" type="text/xsl"?>
+<Travels>
+  <Address>
+    <CountryName>Canada</CountryName>
+    <Title>Package for family</Title>
+    <Discount>15 %</Discount>
+    <Price>7.80</Price>
+<Stay> 4 nights 5 days </Stay>
+  </Address>
+  <Address>
+    <CountryName>Algeria</CountryName>
+    <Title>Package for family</Title>
+    <Discount>10 %</Discount>
+    <Price>8.20</Price>
+<Stay> 5 nights 6 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Brazil</CountryName>
+    <Title>Package for solo trip</Title>
+    <Discount>15 %</Discount>
+    <Price>7.90</Price>
+<Stay> 4nights 5 days </Stay>
+  </Address>
+<Address>
+    <CountryName>France</CountryName>
+    <Title>Package for couple</Title>
+    <Discount>25 %</Discount>
+    <Price>8.90</Price>
+<Stay> 5 nights 6 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Greece</CountryName>
+    <Title>Package for family</Title>
+    <Discount>15 %</Discount>
+    <Price>9.90</Price>
+<Stay> 6 nights 7 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Switzerland</CountryName>
+    <Title>Package for couple</Title>
+    <Discount>25 %</Discount>
+    <Price>9.90</Price>
+<Stay> 5 nights 6 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Singapore</CountryName>
+    <Title>Package for couple</Title>
+    <Discount>15 %</Discount>
+    <Price>10.20</Price>
+<Stay> 7 nights 8 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Spain</CountryName>
+    <Title>Package for solo trip</Title>
+    <Discount>15 %</Discount>
+    <Price>10.90</Price>
+<Stay> 5 nights 6 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Afganistan</CountryName>
+    <Title>Package for family</Title>
+    <Discount>25 %</Discount>
+    <Price>9.10</Price>
+<Stay> 6 nights 5 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Andora</CountryName>
+    <Title>Package for family</Title>
+    <Discount>25 %</Discount>
+    <Price>8.10</Price>
+<Stay> 6 nights 5 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Malaysia</CountryName>
+    <Title>Package for couple</Title>
+    <Discount>15 %</Discount>
+    <Price>8.10</Price>
+<Stay> 3 nights 4 days </Stay>
+  </Address>
+<Address>
+    <CountryName>New Zealand</CountryName>
+    <Title>Package for solo</Title>
+    <Discount>10 %</Discount>
+    <Price>7.20</Price>
+<Stay> 2 nights 3 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Pakistan</CountryName>
+    <Title>Package for family</Title>
+    <Discount>15 %</Discount>
+    <Price>9.20</Price>
+<Stay> 3 nights 4 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Cuba</CountryName>
+    <Title>Package for couple</Title>
+    <Discount>25 %</Discount>
+    <Price>8.20</Price>
+<Stay> 3 nights 4 days </Stay>
+  </Address>
+<Address>
+    <CountryName>Philippines</CountryName>
+    <Title>Package for solo</Title>
+    <Discount>10 %</Discount>
+    <Price>6.20</Price>
+<Stay> 2 nights 3 days </Stay>
+  </Address>
+</Travels>

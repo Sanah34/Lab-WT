@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE customer [
+   <!ELEMENT customer (name,email,phone)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT email (#PCDATA)>
+   <!ELEMENT phone (#PCDATA)>
+]>
+
+<customer>
+   <name>Tanmay Patil</name>
+   <email>tanmay@gmail.com</email>
+   <phone>(011) 123-4567</phone>
+</customer>

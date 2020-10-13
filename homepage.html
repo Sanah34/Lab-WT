@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+
+<link rel="stylesheet" href="main.css">
+<style>
+
+</style>
+</head>
+<body style="background-color:#E3E2DF;" >
+  <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" height="50" width="55"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="margin-left: 800px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul  class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="homepage.php"><b>Home</b><span class="sr-only">(current)</span></a>
+      </li>
+      
+
+      <li class="nav-item active">
+         <a class="nav-link" data-toggle="modal" data-target="#Signup"><b>Signup</b></a> 
+</button>
+        <!-- <a class="nav-link" href="signup.html" target=""><b>Signup</b></a>  -->
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link"  data-toggle="modal" data-target="#Login"><b>Login</b></a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="packages.php"><b>Packages</b></a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="gallery.php" target=""><b>Gallery</b></a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="aboutus.php" target=""><b>About Us</b></a> 
+      </li>
+      
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+   
+  </div>
+     
+</nav>
+<!-- Signup modal -->
+<div class="modal fade " id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Signup</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="container-fluid ">
+        <form action="" method="post">
+          <div class="row" >
+            <fieldset>
+      <legend>Personal Details</legend>
+  <div class="row">
+    <div class="col-md-1 col-sm-1">
+      
+    </div>  
+    <div class="col-md-3 col-sm-3">
+      <label class="b">Name</label>&nbsp;&nbsp;<input type="text" id="name" placeholder="Princy S Ajit" size="20" onblur="signupvalidate(this)" required>
+      <p id="namealert" hidden></p>
+      <br><br>
+      <label class="b">Email</label>&nbsp;&nbsp;<input type="email" id="email" placeholder="princy.ajit@yahoo.com" size="20" onblur="signupvalidate(this)" required>
+      <p id="emailalert" hidden></p>
+      <br><br>
+      <label class="b" style="">Phone no</label>&nbsp;&nbsp;<input type="tel" id="phoneno" placeholder="+91-9959845375" size="20" minlength="10" onblur="signupvalidate(this)" required>
+      <p id="phonealert" hidden></p>
+      <!-- <p style="font-size: 13px;position: absolute;">Eg:+91-&nbsp;9959845375</p> -->
+      <br><br>
+      <label class="b">DOB</label>&nbsp;&nbsp;<input type="date" name="dob" id="dob" size="20" min="1970-01-01" max="" required>
+      <br><br>
+      <label class="b">Select State</label>
+       <select id="states" name="states" required onblur="signupvalidate(this)">
+              <option value="0" selected>Select</option>
+      <option value=”Andhra Pradesh”>Andhra Pradesh</option>
+    <option value=”Arunachal Pradesh”>Arunachal Pradesh</option>
+    <option value=”Assam”>Assam</option>
+    <option value=”Bihar”>Bihar</option>
+    <option value=”Chandigarh”>Chandigarh</option>
+    <option value=”Chhattisgarh”>Chhattisgarh</option>
+    <option value=”Dadar and Nagar Haveli”>Dadar and Nagar Haveli</option>
+    <option value=”Daman and Diu”>Daman and Diu</option>
+    <option value=”Goa”>Goa</option>
+    <option value=”Gujarat”>Gujarat</option>
+    <option value=”Haryana”>Haryana</option>
+    <option value="Himachal Pradesh" disabled>Himachal Pradesh</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value=”Jharkhand” >Jharkhand</option>
+</select>
+<p id="statealert" hidden></p><br><br>
+    
+<label class="b">Password</label>&nbsp;&nbsp;<input type="password" id="password" name="password" minlength="8" required>
+    </div>
+    <div class="col-md-2 col-sm-2">
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <label class="b">Address</label>
+        </div>  
+        <div class="col-md-8 col-sm-8">
+          <textarea name="address" cols="16" rows="4" onblur="signupvalidate(this)" onkeyup="textCounter(this,'counter',250);" required id="address"></textarea>  <br>
+           <input disabled  maxlength="3" size="3" value="250" id="counter">characters&nbsp;left<br>
+           <span id="addressalert" hidden></span>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <label class="b">Gender</label>
+        </div>  
+        <div class="col-md-6 col-sm-6">
+          <input type="radio" name="gender" value="male" required><label>Male</label><br>
+          <input type="radio" name="gender" value="female"><label >Female</label><br>
+          <input type="radio" name="gender" value="other" >
+          <label>Other</label>
+
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <br>
+          <label class="b">ID Proof</label>
+        </div>  
+        <div class="col-md-6 col-sm-6">
+           <br>
+           <input type = "file" name = "fileupload" required accept = ".pdf,image/*" />        
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          
+          <div style="margin-top:14px;">
+          <label class="b">Confirm Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" minlength="8" required onblur="signupvalidate(this)">
+          <p id="passwordalert" hidden></p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2">
+      
+    </div>  
+    </div>
+   </fieldset>
+   <br>
+   <fieldset>
+  <legend>Other Details</legend>
+<div class="row">
+    <div class="col-md-1 col-sm-1">
+
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <label class="b">Personal Interests</label><input list="interests" required="">
+  <datalist id="interests" onblur="signupvalidate(this)">
+    <option value="Singing">
+    <option value="Dancing">
+    <option value="Travelling">
+    <option value="Trekking">
+  </datalist>
+  <p id="interestalert" hidden></p>
+    </div>
+    <div class="col-md-3 col-sm-3">
+
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <label class="b">Receive emails about different tourist packages?</label>
+  <input type="radio" name="recv_emails" value="Yes" required><label>Yes</label>&nbsp;&nbsp;
+  <input type="radio" name="recv_emails" value="No"><label >No</label><br>
+    </div>
+    <div class="col-md-2 col-sm-2">
+
+    </div>
+   </div>
+</fieldset>
+   </div> 
+  <div class="row">
+    <div class="col-md-2 col-sm-2">
+
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <center><br>
+      <input type="submit" value="Submit"> &nbsp;&nbsp;<input type="reset" value="Reset"><br><br>
+    </center>
+    </div>
+   </div>
+        </form>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Login modal -->
+<div class="modal fade " id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h3 class="modal-title" id="exampleModalLabel">Login</h3> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+       <div class="row">
+        <div class="col-md-2 col-sm-2">
+       
+        </div>
+        <div class="col-md-7 col-sm-7 ">
+            <form action="">
+            <center><h2>Login</h2><br>
+      <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;
+    <input type="email" placeholder=" Email" class="textbox" required><br><br>
+    <i class="fa fa-lock" aria-hidden="true"></i> &nbsp;&nbsp;
+    <input type="password" placeholder=" Password"class="textbox" required><br><br>
+        
+    <input type="submit" value="Login"><br><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label><br>
+      <span class="psw"><a href="#"><u>Forgot password?</u></a></span><br><br>
+  </center>
+</form>
+  </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="startimage" style="background-image: url('images/hero_1.jpg');background-repeat: no-repeat;background-size:100% 100%;width:100%;height: 700px;">
+<h1 class="title animate" >Let's Enjoy <br> The Wonders of Nature</h1>
+
+</div>
+<br>
+ <!-- <marquee scrollamount="15"> <h1 align="center" size="6">Welcome To Explore!</h1></marquee> -->
+ <!-- <marquee scrollamount="15" direction="right"> <h1 align="center" size="5" >A world to see indeed!</h1></marquee> -->
+ <div class="container-fluid">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/historic.jpg" height="400"
+        alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/heritage2.jpg" height="400"
+        alt="Second slide" >
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/heritage3.jpg" height="400"
+        alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+ <p > Tourism in India has shown a phenomenal growth in the past decade. One of the reasons is that the Ministry of tourism, India has realized the immense potential of tourism in India during vacations. India travel tourism has grown rapidly with a great influx of tourists from all across the globe who have been irresistibly attracted to the rich culture, heritage, and incredible natural beauty of India.</p><br> 
+  
+<div  align="center">
+  <img src="images/goi.jpg" height="250" width="250">&nbsp;&nbsp;
+  <img src="images/beach.jpg" height="250" width="250">&nbsp;&nbsp;
+  <img src="images/hills.jpg" height="250" width="250">&nbsp;&nbsp;
+   </div>
+  <p> Travel through the lovely Indian states and discover closely the resplendent colors and rich cultural locales of this incredible land. Our India tourism guide provides you a glimpse of travel and tourism in india ,india tourism information about south india tourism, north India tourism, and all the major tourist destinations, and tourism services of India.</p>
+<br>
+<div align="center">
+<h3 class="line"> Regions in India </h3>
+<div style="position:relative;width:27%; " >
+<img src="images/india1.png" alt="Workplace" usemap="#workmap" width="350" height="350">
+<span style=" writing-mode: vertical-rl;
+  text-orientation: upright;position: absolute;top: 28px;left: 115px;font-size: 18px;font-style: bold;"><b>North</b></span>
+  <span style=" position: absolute;top: 150px;left: 50px;font-size: 18px;font-style: bold;"><b>West</b></span>
+  <span style=" position: absolute;top: 155px;left: 120px;font-size: 18px;font-style: bold;"><b>Central</b></span>
+  <span style=" position: absolute;top: 120px;right: 80px;font-size: 18px;font-style: bold;"><b>East</b></span>
+<span style=" writing-mode: vertical-rl;
+  text-orientation: upright;position: absolute;bottom: 30px;left: 115px;font-size: 18px;font-style: bold;"><b>South</b></span>
+</div>
+<map name="workmap">
+   <area shape="poly" coords="77,2 ,150,20,160,110,170,115,170,130,80,126,70,100" alt="Computer" href="#north">
+  <area shape="poly" coords="40,110,80,120,105,200,70,200,35,184,21,160" alt="Computer" href="#west">
+  <area shape="circle" coords="145,165,42" alt="Computer" href="#central">
+  <area shape="poly" coords="180,115,320,85,330,98,289,173,214,204,188,204" alt="Computer" href="#east">
+  <area shape="poly" coords="68,205,205,205,120,345,82,270" alt="Computer" href="#south">
+  
+</map><br>
+</div>
+<div align="center">
+<a  style="float:left;margin-left:120px;margin-right:80px;" name="north">
+<table>
+  <caption> <h3><a href="https://theculturetrip.com/asia/india/articles/the-best-places-to-visit-in-north-india/" class="headings"> Famous Places in North India</a></h3> </caption>
+  <thead>
+    <tr style="background-color:black;color:#E3E2DF;"> <td colspan="2"></td></tr> 
+  </thead>
+    <tr>
+    <td><img src="images/taj.jpg" class="img" alt="North India" > 
+      <span class="bottom-center">Taj Mahal</span>
+    </td>
+    <td><img src="images/indiagate.jpg" class="img" alt="South India" > <span class="bottom-center">India Gate </span></td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/kullu.jpg" class="img" alt="East India" ><span class="bottom-center">Kullu </span></td>
+    <td><img src="images/wagahborder.jpg" class="img" alt="Central India" ><span class="bottom-center">Wagah Border</span></td>
+    </td>
+  </tr>
+  <tfoot>
+    <tr style="background-color:black;color:#E3E2DF;"><td colspan="2"></td></tr> 
+  </tfoot>
+</table>
+</a>
+<a name="south">
+<table>
+  <caption> <h3> <a href="https://theculturetrip.com/asia/india/articles/the-best-places-to-visit-in-south-india/" class="headings">Famous Places in South India</a> </h3> </caption>
+  <thead>
+    <tr style="background-color:black;color:#E3E2DF;"> <td colspan="2"></td></tr> 
+  </thead>
+    <tr>
+    <td><img src="images/charminar.jpg" class="img" alt="North India" > 
+      <span class="bottom-center">Charminar </span>
+    </td>
+    <td><img src="images/munnar.jpg" class="img" alt="South India" ><span class="bottom-center">Munnar</span></td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/heritage1.jpg" class="img" alt="East India" ><span class="bottom-center">Hampi </span></td>
+    <td><img src="images/mysorepalace.jpg" class="img" alt="Central India" ><span class="bottom-center">Mysore Palace</span></td>
+    
+  </tr>
+  <tfoot>
+    <tr style="background-color:black;color:#E3E2DF;"><td colspan="2"></td></tr> 
+  </tfoot>
+</table>
+</a>
+<a style="float:left;margin-left:120px;margin-right:80px;" name="west">
+  <br>
+<table>
+  <caption> <h3><a href="https://www.holidify.com/collections/places-to-visit-in-west-india" class="headings"> Famous Places in West India</a> </h3> </caption>
+  <thead>
+    <tr style="background-color:black;color:#E3E2DF;"> <td colspan="2"></td></tr> 
+  </thead>
+    <tr>
+    <td><img src="images/goi.jpg" class="img" alt="North India" > 
+      <span class="bottom-center">Gateway of India </span>
+    </td>
+    <td><img src="images/hawamahal.jpg" class="img" alt="South India" > <span class="bottom-center">Hawa Mahal</span></td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/rannofkutch.jpg" class="img" alt="East India" ><span class="bottom-center">Rann of Kutch </span></td>
+    <td><img src="images/calangute_beach.jpg" class="img" alt="Central India" ><span class="bottom-center">Calangute beach</span></td>
+    
+  </tr>
+  <tfoot>
+    <tr style="background-color:black;color:#E3E2DF;"><td colspan="2"></td></tr> 
+  </tfoot>
+</table>
+</a>
+<a name="east">
+  <br>    
+<table>
+  <caption> <h3> <a href="https://www.holidify.com/collections/places-to-visit-in-east-india" class="headings">Famous Places in East India </a></h3> </caption>
+  <thead>
+    <tr style="background-color:black;color:#E3E2DF;"> <td colspan="2"></td></tr> 
+  </thead>
+    <tr>
+    <td><img src="images/north_eastindia.jpg" class="img" alt="North India" > 
+      <span class="bottom-center">Gangtok </span>
+    </td>
+    <td><img src="images/kolkata.jpg" class="img" alt="South India" > <span class="bottom-center">Kolkata </span></td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/tawang.jpg" class="img" alt="East India" ><span class="bottom-center">Tawang </span></td>
+    <td><img src="images/hills.jpg" class="img" alt="Central India" ><span class="bottom-center">Darjeeling </span></td>
+    
+  </tr>
+  <tfoot>
+    <tr style="background-color:black;color:#E3E2DF;"><td colspan="2"></td></tr> 
+  </tfoot>
+</table>
+</a>
+<a name="central">
+<table>
+  <caption> <h3><a href="https://www.holidify.com/collections/places-to-visit-in-central-india" class="headings"> Famous Places in Central India</a> </h3> </caption>
+  <thead>
+    <tr style="background-color:black;color:#E3E2DF;"> <td colspan="2"></td></tr> 
+  </thead>
+    <tr>
+    <td><img src="images/gwaliorfort.jpg" class="img" alt="North India" > 
+      <span class="bottom-center">Gwalior Fort </span>
+    </td>
+    <td><img src="images/chitrakootwaterfall.jpg" class="img" alt="South India" > <span class="bottom-center">Chitrakoot Waterfall </span></td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/marblerocks.jpg" class="img" alt="East India" ><span class="bottom-center">Marble Rocks</span></td>
+    <td><img src="images/pachmarhi.jpg" class="img" alt="Central India" ><span class="bottom-center">Pachmarhi </span></td>
+    
+  </tr>
+  <tfoot>
+    <tr style="background-color:black;color:#E3E2DF;"><td colspan="2"></td></tr> 
+  </tfoot>
+</table>
+<br>
+</a>
+</div>
+<div style="background-image: url('images/beachbg1.jpg');background-repeat: no-repeat;background-size:cover;width:100%;height: 450px;">
+<h1 class="title2"><center>Famous Beaches,Hill Stations and WildLife!<br><a href="Places.html"><font size="3" style="margin-left: 30px;color:black;">Know more>></font></a></center></h1>
+
+</div>
+<br>
+<div class="blurcontainer">
+  <img src="images/beach.jpg" alt="Nature" style="width:100%;height:450px;filter:blur(5px);">
+  <h2 style="position:absolute;top:40px;left:10px;font-family:'Times New Roman',Times,serif;"><b>Can't help decide the best destination to travel?</b></h2>
+  <h5 style="position:absolute;top:80px;left:140px;font-family:'Times New Roman',Times,serif;"><b>Our travel experts will do that for you!</b></h5>
+  <button type="button" style="position:absolute;top:120px;left:240px;" class="btn btn-dark"><a href="travelform.html" style="color:white;"><b>Know More</b></a></button>
+
+</div>
+  
+<center><h2>Customer Experience and Testimonials</h2><br></center>
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-1 col-sm-1" id="col-md-1" style="margin-left: 70px;">
+    </div>
+    <div class="col-md-3 cokl-sm-3">
+        <div class="card" style="width: 18rem;background-color:#E3E2DF;">
+  <img class="card-img-top" src="images/munnar.jpg" alt="Card image cap" width="200" height="200">
+  <div class="card-body">
+    <h5 class="card-title">Kerala:God's Own Country</h5>
+    <p class="card-text"><i>"Verdant coastlines, languid backwaters, lush tea gardens and the smell of fresh-grown spices wafting in the air—Kerala is a sliver of tropical paradise that has attracted tourists from all over the world."</i></p>
+    <audio controls style="margin-left:-15px;width:270px;display: block;" >
+  <source src="song.mpeg" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    <div align="right">-Priya S</div>
+  </div>
+</div>
+    </div>  
+    <div class="col-md-3 cokl-sm-3">
+      <div class="card" style="width: 18rem;background-color:#E3E2DF;">
+  <img class="card-img-top" src="images/hills.jpg" alt="Card image cap" width="200" height="200">
+  <div class="card-body">
+    <h5 class="card-title">Manali-Queen of Hillstations</h5>
+    <p class="card-text"><i>" Up above in the lofty hills of Himachal, lies a hilltop hamlet showered with scenic surroundings, adventure avenues . Come, live it up in Manali, India’s favourite hill station! "</i></p>
+    <audio controls style="margin-left:-15px;width:270px;display: block;">
+  <source src="song.mpeg" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  <div align="right">-Shruti Iyer</div>  
+  </div>
+</div>
+
+    </div>
+    <div class="col-md-3 cokl-sm-3">
+        <div class="card" style="width: 18rem;background-color:#E3E2DF;">
+  <img class="card-img-top" src="images/beach.jpg" alt="Card image cap" width="200" height="200">
+  <div class="card-body">
+    <h5 class="card-title">Kanyakumari</h5>
+        <p class="card-text"><i>"Beautiful beaches, cascading waterfalls, and the magnificent Kanyakumari Temple – the abode of Goddess Parvati beckons you to its serene and scenic lands! "</i></p>
+        <audio controls style="margin-top:60px;margin-left:-15px;width:270px;display: block;" muted>
+  <source src="song.mpeg" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div align="right">-Anonymous</div>
+  </div>
+
+</div>
+    </div>
+  </div>
+
+</div>  <br><br>
+
+<div align="center">
+<iframe src="https://www.google.com/intl/en_in/earth/" style="height:400px;width:700px;"></iframe>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7612.5221837644385!2d78.52818259999997!3d17.447213200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1593066821474!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+
+<br><br>
+<button onclick="getcord()">Click to Get Coordinates of your location!</button><br><p id="demo1"></p>  <br>
+<!-- <div id = "map" style = "width:640px; height:480px;"></div>
+</div> -->
+<footer style="background-color: black;padding:10px;margin:-15px;">
+  <font color="white"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></font>
+ &nbsp;&nbsp; <font color="white"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></font>
+  &nbsp;&nbsp;<font color="blue"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br></font>
+</footer>
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function() { 
+            $("#holidayplanbutton").click(function() { 
+
+                var x = $("#holidayplanform").serializeArray(); 
+                console.log(x);
+                $.each(x, function(i, field) { 
+                    $("#d").append(field.name + ":" + field.value + "  "); 
+                }); 
+            }); 
+        }); 
+
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "#90AFC5");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "white");
+  });
+  $("textarea").keydown(function(){
+    $(this).css("background-color", "#90AFC5");
+  });
+  $("textarea").keyup(function(){
+    $(this).css("background-color", "white");
+  });
+  $("nav li").hover(function(){
+    $(this).css("background-color", "grey");
+    }, function(){
+    $(this).css("background-color", "#343a40");
+  });
+
+}); 
+  </script>
+<script>
+ var variable1 = document.getElementById("demo1"); 
+  function getcord(){
+        navigator.geolocation.getCurrentPosition(showLoc); 
+  }
+  function showLoc(pos){ 
+              
+                variable1.innerHTML = "Latitude: " + pos.coords.latitude +  
+                "<br>Longitude: " + pos.coords.longitude;  
+                markers=[pos.coords.latitude,pos.coords.longitude];
+                return markers;
+            } 
+        // // // fake JSON call
+        // function getJSONMarkers() {
+        //   var variable1 = document.getElementById("demo1"); 
+        //     const markers = [];
+        //      function getlocation(){ 
+        //         navigator.geolocation.getCurrentPosition(showLoc); 
+        // } 
+        // function showLoc(pos){ 
+                
+        //        markers.push(pos.coords.latitude);
+        //        markers.push(pos.coords.longitude);
+              
+                  
+        //     } 
+        //     getlocation();
+        
+        //   return markers;
+        // }
+
+
+        // function loadMap() {
+          
+        //   // Initialize Google Maps
+        //     const locationMarkers = getJSONMarkers();
+        //   const mapOptions = {
+        //     center:new google.maps.LatLng(locationMarkers[0],locationMarkers[1]),
+        //     zoom: 11
+        //   }
+        //   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        //   // Load JSON Data
+          
+
+        //   // Initialize Google Markers
+          
+        //     let marker = new google.maps.Marker({
+        //       map: map,
+        //       position: new google.maps.LatLng(locationMarkers[0],locationMarkers[1])
+        //                   })
+          
+        // }
+
+      </script>
+   <script src = "https://maps.googleapis.com/maps/api/js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>  

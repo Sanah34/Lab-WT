@@ -1,0 +1,89 @@
+{
+   "goa": {
+      "about": "Know about Goa!",
+      "package": [
+         {
+            "name": "Best of Goa",
+            "price": "5999",
+            "nightcount": "3",
+            "inclusions": "3 star hotels,vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Arrival in Goa\n\t\t\t\tArrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).\n\t\t\t\tDay 2 - Full Day Sightseeing of South Goa\n\t\t\t\tFull day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost(On Sharing Basis).\n\t\t\t\tDay 3 - Day at Leisure\n\t\t\t\tYour Full Day is at Leisure.\n\t\t\t\tDay 4 - Departure from Goa\n\t\t\t\tTransfers from Hotel to Airport (On Sharing Basis).",
+            "taxcharge": "1101.99"
+         },
+         {
+            "name": "Amazing Goa",
+            "price": "7999",
+            "nightcount": "3",
+            "inclusions": "5 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Arrival in Goa\n\t\t\t\tArrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).\n\t\t\t\tDay 2 - Full Day Sightseeing of South Goa\n\t\t\t\tFull day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost(On Sharing Basis).\n\t\t\t\tDay 3 - Day at Leisure\n\t\t\t\tYour Full Day is at Leisure.\n\t\t\t\tDay 4 - Departure from Goa\n\t\t\t\tTransfers from Hotel to Airport (On Sharing Basis).",
+            "taxcharge": "1301.99"
+         },
+         {
+            "name": "Scenic Goa",
+            "price": "6999",
+            "nightcount": "2",
+            "inclusions": "3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Arrival in Goa\n\t\t\t\tArrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).\n\t\t\t\tDay 2 - Full Day Sightseeing of South Goa\n\t\t\t\tFull day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost (On Sharing Basis)\n\t\t\t\tDay 3 - Depart Goa\n\t\t\t\tTransfers from Hotel to Airport (On Sharing Basis)",
+            "taxcharge": "1201.99"
+         }
+      ]
+   },
+   "manali": {
+      "about": "Know about Manali!",
+      "package": [
+         {
+            "name": "Sarthak Resort, Manali - Volvo",
+            "price": "6499",
+            "nightcount": "4",
+            "inclusions": "Volvo,3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Delhi - Manali Volvo (Overnight)\n\t\t\t\tOvernight Journey Delhi to Manali.\n\t\t\t\tDay 2 - Manali-Hidimba Devi Temple-Vashist Hot Water Springs-Van Vihar-Hongkong Market and the Tibetan Monastery\n\t\t\t\tDay 3 - Manali-Sollang valley\n\t\t\t\tDay 4 - Manali-Kullu\n\t\t\t\tDay 5 - Manali - Delhi Volvo (Overnight)",
+            "taxcharge": "1099.50"
+         },
+         {
+            "name": "Utopia Resort Manali Volvo - Ex Delhi",
+            "price": "7499",
+            "nightcount": "4",
+            "inclusions": "Volvo,3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Delhi - Manali Volvo (Overnight)\n\t\t\t\tDay 2 - Manali-Hidimba Devi Temple-Tibetan Monastery-Hongkong Market\n\t\t\t\tDay 3 - Visit Sollang Valley\n\t\t\t\tDay 4 - Visit Kullu-Manali\n\t\t\t\tDay 5 - Manali - Delhi Volvo (Overnight)",
+            "taxcharge": "1251.50"
+         },
+         {
+            "name": "Astounding Manali with Flight - Ex Delhi",
+            "price": "30449",
+            "nightcount": "4",
+            "inclusions": "Flights,3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Drive from Delhi to Manali (570 km/approx. 14 hours)\n\t\t\t\tDay 2 - Trip to Rohtang Pass ( On Direct Payment)\n\t\t\t\tDay 3 - Sightseeing in Manali\n\t\t\t\tDay 4 - Drive from Manali to Chandigarh (325 km/approx. 8 hours)\n\t\t\t\tAfter breakfast, drive to Delhi for the return journey. TOUR ENDS.",
+            "taxcharge": "3250.85"
+         }
+      ]
+   },
+   "andaman": {
+      "about": "Know about Andaman!",
+      "package": [
+         {
+            "name": "Mini Andaman",
+            "price": "15999",
+            "nightcount": "4",
+            "inclusions": "Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Port Blair Pickup From Airport - Corbyn's Cove Beach - Cellular Jail Light and Sound Show\n\t\t\t\tDay 2 - Hotel to Port Blair Harbour - Pickup from Havelock Harbour - Visit Radha Nagar Beach\n\t\t\t\tDay 3 - Havelock - Elephant Beach\n\t\t\t\tDay 4 - Depart Form Havelock Harbour - Port Blair Harbour to Hotel - Enjoy Shopping\n\t\t\t\tDay 5 - Depart from Port Blair",
+            "taxcharge": "2341.99"
+         },
+         {
+            "name": "Best of Andaman",
+            "price": "23999",
+            "nightcount": "5",
+            "inclusions": "Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Port Blair Pickup From Airport - Corbyn's Cove Beach - Cellular Jail Light and Sound Show\n\t\t\t\tDay 2 - Hotel To Port Blair Harbour - Pickup from Havelock Harbour - Visit Radha Nagar Beach\n\t\t\t\tDay 3 - Havelock - Elephant Beach\n\t\t\t\tDay 4 - Depart Form Havelock Harbour - Pickup from Neil Island Harbour\n\t\t\t\tDay 5 - Sightseeing and Drop at Neil Island Harbour - Port Blair Harbour To Hotel - Enjoy Shopping\n\t\t\t\tDay 6 - Depart from Portblair",
+            "taxcharge": "2701.99"
+         },
+         {
+            "name": "Simply Andaman",
+            "price": "31249",
+            "nightcount": "4",
+            "inclusions": "Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing",
+            "itinerary": "Day 1 - Arrival at Port Blair\n\t\t\t\tDay 2 - Port Blair - Havelock (54 Kms)\n\t\t\t\tDay 3 - Havelock\n\t\t\t\tDay 4 - Havelock - Port Blair\n\t\t\t\tDay 5 - Departure from Port Blair",
+            "taxcharge": "4500.99"
+         }
+      ]
+   }
+}
